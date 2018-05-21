@@ -14,6 +14,9 @@
 		4211E5A420B2A4CC00E11076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4211E5A220B2A4CC00E11076 /* LaunchScreen.storyboard */; };
 		4211E5AF20B2A4CD00E11076 /* CollectionViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5AE20B2A4CD00E11076 /* CollectionViewTestTests.swift */; };
 		4211E5BA20B2A4CD00E11076 /* CollectionViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5B920B2A4CD00E11076 /* CollectionViewTestUITests.swift */; };
+		4211E5C920B2A6C400E11076 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5C720B2A6C400E11076 /* ApiManager.swift */; };
+		4211E5CA20B2A6C400E11076 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5C820B2A6C400E11076 /* CollectionViewCell.swift */; };
+		4211E5CC20B2A6D600E11076 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5CB20B2A6D500E11076 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4211E5B520B2A4CD00E11076 /* CollectionViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4211E5B920B2A4CD00E11076 /* CollectionViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTestUITests.swift; sourceTree = "<group>"; };
 		4211E5BB20B2A4CD00E11076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4211E5C720B2A6C400E11076 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		4211E5C820B2A6C400E11076 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		4211E5CB20B2A6D500E11076 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 		4211E59820B2A4C100E11076 /* CollectionViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				4211E5CB20B2A6D500E11076 /* DataManager.swift */,
+				4211E5C720B2A6C400E11076 /* ApiManager.swift */,
+				4211E5C820B2A6C400E11076 /* CollectionViewCell.swift */,
 				4211E59920B2A4C100E11076 /* AppDelegate.swift */,
 				4211E59B20B2A4C100E11076 /* ViewController.swift */,
 				4211E59D20B2A4C100E11076 /* Main.storyboard */,
@@ -257,6 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4211E59C20B2A4C100E11076 /* ViewController.swift in Sources */,
+				4211E5CC20B2A6D600E11076 /* DataManager.swift in Sources */,
+				4211E5C920B2A6C400E11076 /* ApiManager.swift in Sources */,
+				4211E5CA20B2A6C400E11076 /* CollectionViewCell.swift in Sources */,
 				4211E59A20B2A4C100E11076 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
