@@ -17,6 +17,10 @@
 		4211E5C920B2A6C400E11076 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5C720B2A6C400E11076 /* ApiManager.swift */; };
 		4211E5CA20B2A6C400E11076 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5C820B2A6C400E11076 /* CollectionViewCell.swift */; };
 		4211E5CC20B2A6D600E11076 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5CB20B2A6D500E11076 /* DataManager.swift */; };
+		4211E5D520B2A97700E11076 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5D020B2A97600E11076 /* Item.m */; };
+		4211E5D620B2A97700E11076 /* JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5D120B2A97600E11076 /* JMImageCache.m */; };
+		4211E5D720B2A97700E11076 /* UIImageView+JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5D420B2A97600E11076 /* UIImageView+JMImageCache.m */; };
+		4211E5D920B2AC3A00E11076 /* RowsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5D820B2AC3A00E11076 /* RowsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		4211E5C720B2A6C400E11076 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		4211E5C820B2A6C400E11076 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		4211E5CB20B2A6D500E11076 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4211E5CE20B2A97500E11076 /* CollectionViewTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CollectionViewTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		4211E5CF20B2A97600E11076 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		4211E5D020B2A97600E11076 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		4211E5D120B2A97600E11076 /* JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMImageCache.m; sourceTree = "<group>"; };
+		4211E5D220B2A97600E11076 /* JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMImageCache.h; sourceTree = "<group>"; };
+		4211E5D320B2A97600E11076 /* UIImageView+JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JMImageCache.h"; sourceTree = "<group>"; };
+		4211E5D420B2A97600E11076 /* UIImageView+JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JMImageCache.m"; sourceTree = "<group>"; };
+		4211E5D820B2AC3A00E11076 /* RowsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 		4211E58D20B2A4C100E11076 = {
 			isa = PBXGroup;
 			children = (
+				4211E5CD20B2A94100E11076 /* JMImageCache */,
 				4211E59820B2A4C100E11076 /* CollectionViewTest */,
 				4211E5AD20B2A4CD00E11076 /* CollectionViewTestTests */,
 				4211E5B820B2A4CD00E11076 /* CollectionViewTestUITests */,
@@ -103,6 +116,7 @@
 		4211E59820B2A4C100E11076 /* CollectionViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				4211E5D820B2AC3A00E11076 /* RowsManager.swift */,
 				4211E5CB20B2A6D500E11076 /* DataManager.swift */,
 				4211E5C720B2A6C400E11076 /* ApiManager.swift */,
 				4211E5C820B2A6C400E11076 /* CollectionViewCell.swift */,
@@ -111,6 +125,7 @@
 				4211E59D20B2A4C100E11076 /* Main.storyboard */,
 				4211E5A020B2A4CC00E11076 /* Assets.xcassets */,
 				4211E5A220B2A4CC00E11076 /* LaunchScreen.storyboard */,
+				4211E5CE20B2A97500E11076 /* CollectionViewTest-Bridging-Header.h */,
 				4211E5A520B2A4CC00E11076 /* Info.plist */,
 			);
 			path = CollectionViewTest;
@@ -132,6 +147,19 @@
 				4211E5BB20B2A4CD00E11076 /* Info.plist */,
 			);
 			path = CollectionViewTestUITests;
+			sourceTree = "<group>";
+		};
+		4211E5CD20B2A94100E11076 /* JMImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				4211E5CF20B2A97600E11076 /* Item.h */,
+				4211E5D020B2A97600E11076 /* Item.m */,
+				4211E5D220B2A97600E11076 /* JMImageCache.h */,
+				4211E5D120B2A97600E11076 /* JMImageCache.m */,
+				4211E5D320B2A97600E11076 /* UIImageView+JMImageCache.h */,
+				4211E5D420B2A97600E11076 /* UIImageView+JMImageCache.m */,
+			);
+			path = JMImageCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +230,7 @@
 				TargetAttributes = {
 					4211E59520B2A4C100E11076 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					4211E5A920B2A4CD00E11076 = {
 						CreatedOnToolsVersion = 9.3;
@@ -265,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4211E5D520B2A97700E11076 /* Item.m in Sources */,
+				4211E5D620B2A97700E11076 /* JMImageCache.m in Sources */,
+				4211E5D720B2A97700E11076 /* UIImageView+JMImageCache.m in Sources */,
 				4211E59C20B2A4C100E11076 /* ViewController.swift in Sources */,
 				4211E5CC20B2A6D600E11076 /* DataManager.swift in Sources */,
+				4211E5D920B2AC3A00E11076 /* RowsManager.swift in Sources */,
 				4211E5C920B2A6C400E11076 /* ApiManager.swift in Sources */,
 				4211E5CA20B2A6C400E11076 /* CollectionViewCell.swift in Sources */,
 				4211E59A20B2A4C100E11076 /* AppDelegate.swift in Sources */,
@@ -380,6 +413,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "CollectionViewTest/CollectionViewTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -433,6 +467,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "CollectionViewTest/CollectionViewTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -442,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CollectionViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -450,6 +486,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-AryaSreenivasan.CollectionViewTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CollectionViewTest/CollectionViewTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CollectionViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,6 +506,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-AryaSreenivasan.CollectionViewTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CollectionViewTest/CollectionViewTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
