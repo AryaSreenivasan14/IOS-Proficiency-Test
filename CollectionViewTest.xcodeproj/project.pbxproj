@@ -21,6 +21,7 @@
 		4211E5D620B2A97700E11076 /* JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5D120B2A97600E11076 /* JMImageCache.m */; };
 		4211E5D720B2A97700E11076 /* UIImageView+JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5D420B2A97600E11076 /* UIImageView+JMImageCache.m */; };
 		4211E5D920B2AC3A00E11076 /* RowsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5D820B2AC3A00E11076 /* RowsManager.swift */; };
+		4211E5DB20B2AEAB00E11076 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211E5DA20B2AEAB00E11076 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4211E5D320B2A97600E11076 /* UIImageView+JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JMImageCache.h"; sourceTree = "<group>"; };
 		4211E5D420B2A97600E11076 /* UIImageView+JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JMImageCache.m"; sourceTree = "<group>"; };
 		4211E5D820B2AC3A00E11076 /* RowsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowsManager.swift; sourceTree = "<group>"; };
+		4211E5DA20B2AEAB00E11076 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		4211E59820B2A4C100E11076 /* CollectionViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				4211E5DA20B2AEAB00E11076 /* DetailViewController.swift */,
 				4211E5D820B2AC3A00E11076 /* RowsManager.swift */,
 				4211E5CB20B2A6D500E11076 /* DataManager.swift */,
 				4211E5C720B2A6C400E11076 /* ApiManager.swift */,
@@ -301,6 +304,7 @@
 				4211E5CC20B2A6D600E11076 /* DataManager.swift in Sources */,
 				4211E5D920B2AC3A00E11076 /* RowsManager.swift in Sources */,
 				4211E5C920B2A6C400E11076 /* ApiManager.swift in Sources */,
+				4211E5DB20B2AEAB00E11076 /* DetailViewController.swift in Sources */,
 				4211E5CA20B2A6C400E11076 /* CollectionViewCell.swift in Sources */,
 				4211E59A20B2A4C100E11076 /* AppDelegate.swift in Sources */,
 			);

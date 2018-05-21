@@ -15,9 +15,18 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     var noImageAvailable = UIImage(named: "noImageAvailable")
     var rowsArray : NSMutableArray = []
     var flagsArray : NSMutableArray = []
+    var refreshControl:UIRefreshControl!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Adding refresh control
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(ViewController.refreshStream), for: .valueChanged)
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull down to refresh")
+        refreshControl.layer.zPosition = -1
+        collectionView!.addSubview(refreshControl)
+        
         fetchDataFromAPI()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -36,6 +45,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             }
         }
     }
+    
+    // MARK: - Refresh control action
+    @objc func refreshStream() {
+        print("refresh")
+        fetchDataFromAPI()
+    }
+
 
     // MARK: - Table View Methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -95,6 +111,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return true
     }
 
-
+    // MARK: - Go to detail VC
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let indexDict = rowsArray.object(at: indexPath.row) as? NSDictionary {
+            let rowsManagerObject : RowsManager = RowsManager(indexDict: indexDict)
+            
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextVC = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+            nextVC.passedDict = rowsManagerObject
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        }
+        
+    }
 }
 
